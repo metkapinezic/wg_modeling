@@ -2,7 +2,7 @@
 SELECT COUNT(*)
 FROM (
     SELECT USER_ACTIVITY_ID, COUNT(*) AS count
-    FROM user_activity
+    FROM {{model}}
     GROUP BY USER_ACTIVITY_ID
     HAVING COUNT(*) > 1
 ) AS duplicate_keys;

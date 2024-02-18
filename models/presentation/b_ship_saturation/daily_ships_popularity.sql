@@ -1,4 +1,4 @@
--- solely on ship purchases made each day
+-- ship purchases made each day
 CREATE VIEW daily_ship_popularity AS
 SELECT 
     DATE_TRUNC('day', EVENT_TIMESTAMP) AS TRANSACTION_DATE,

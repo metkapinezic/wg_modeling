@@ -15,5 +15,8 @@ c. User transactions overview:
 	- new users participation in battles on a 1/3/7/14 day since registration
 	- battle participation by active users
 
+It proposes a staging, intermediate and presentation layer.
+
+
 
 

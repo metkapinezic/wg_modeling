@@ -33,8 +33,8 @@ def quality_check_stage(**kwargs):
     pass
  
 # TASK 3: Update Mart User Activity
-def update_mart_user_activity(**kwargs):
-    # create table insert into mart_user activity
+def user_activity(**kwargs):
+    # create table insert into user activity
     pass
  
 # TASK 4: Quality Checks Passed
@@ -64,7 +64,7 @@ quality_check_stage = PythonOperator(
 
 # Create Task 3: update_mart_user_activity
 update_mart_user_activity = PythonOperator(
-    task_id='update_mart_user_activity',
+    task_id='user_activity',
     python_callable=update_mart_user_activity,
     provide_context=True,
     dag=my_dag,
@@ -82,4 +82,4 @@ quality_checks_passed = PythonOperator(
 
 ############# DAG DESIGN ###############
 
-stage_tables >> quality_check_stage >> update_mart_user_activity >> quality_checks_passed
+stage_tables >> quality_check_stage >> user_activity >> quality_checks_passed

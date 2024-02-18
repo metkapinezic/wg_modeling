@@ -1,0 +1,17 @@
+    CREATE TABLE STG_LOGIN
+  (
+      USER_ID                VARCHAR,
+      EVENT_TIMESTAMP        TIMESTAMP_TZ,
+      LOGIN_EVENT_ID         VARCHAR,
+      USD_COST               NUMBER,
+      USER_LTV               NUMBER
+  );
+    
+    INSTERT INTO STG_LOGIN (USER_ID, EVENT_TIMESTAMP, LOGIN_EVENT_ID, USD_COST, USER_LTV)
+    
+    SELECT 
+        USER_ID, 
+        EVENT_TIMESTAMP, 
+        LOGIN_EVENT_ID
+        USER_LTV
+    FROM SRC_LOGIN
