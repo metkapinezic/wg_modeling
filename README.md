@@ -19,3 +19,4 @@ This repository is my proposal for the ETL/ELT design for the following metrics 
 It proposes a staging, intermediate and presentation layer done in dbt and scheduled in airflow daily with incremental refresh.
 
 
+

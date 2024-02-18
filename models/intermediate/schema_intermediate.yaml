@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: int_user_activity
+    description: one big table that tracks relevant source data for furter use, works as one source of information
+
+  - name: int_game_performance
+    description: 
+      view that works as a fact for general kpis (Active Users, New Users, Revenue, Spenders(Buyers), ARPU, ARPPU) 
+      excluding the retention metrics
+
+  - name: int_retention
+      description: view that includes retention count (count of users who have logged in on that day) 
+        and retention rate (in comparison to all users)

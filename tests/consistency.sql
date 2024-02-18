@@ -1,4 +1,4 @@
 -- Check if event_timestamp is in timestamp format
 SELECT COUNT(*)
-FROM user_activity
+FROM {{model}}
 WHERE TO_TIMESTAMP(EVENT_TIMESTAMP) IS NOT NULL;

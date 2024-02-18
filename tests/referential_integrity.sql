@@ -1,1 +1,0 @@
--- Check if foreign key relationships between tables are maintained
